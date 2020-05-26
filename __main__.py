@@ -9,7 +9,7 @@ import numpy as np
 clf = {}
 ftse = None
 
-with open("app/models/clf.pkl", "rb") as f:
+with open("app/clf.pkl", "rb") as f:
 	ftse = pickle.load(f)
 
 # If the classifier could not be loaded, then exit the program
