@@ -23,9 +23,9 @@ clf["FTSE"] = ftse
 # Instantiate your flask app
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-	return render_template("index.html")
+#@app.route('/')
+#def index():
+#	return render_template("index.html")
 
 # The predict endpoint accepts an index, along with an input and returns a prediction on movement
 @app.route("/predict", methods = ["GET", "POST"])
